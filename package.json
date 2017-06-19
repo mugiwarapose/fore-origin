@@ -1,0 +1,24 @@
+{
+  "name": "fore-origin",
+  "version": "1.0.0",
+  "description": "node httpserver",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mugiwarapose/ssm-origin.git"
+  },
+  "keywords": [
+    "node",
+    "http-server",
+    "angular"
+  ],
+  "author": "zhangdd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mugiwarapose/ssm-origin/issues"
+  },
+  "homepage": "https://github.com/mugiwarapose/ssm-origin#readme"
+}

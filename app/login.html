@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="loginApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="js/angular.js"></script>
+    <script src="js/angular-resource.js"></script>
+    <script src="controller/loginController.js"></script>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+          
+            background: url('img/bg01.jpg');
+            
+        }
+      
+        .login .content {
+          position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 350px;
+            height:220px;
+            margin: auto;
+            background-color: #000;
+            text-align: center;
+            opacity: 0.5;
+            border-radius:5px;
+            
+        }
+        .form-level{
+            height:35px;
+            margin: 10px;
+            text-align: right;
+        
+        }
+
+    
+      
+    </style>
+</head>
+<body>
+        <div class="login">
+
+                <div class="panel panel-prmary">
+
+                
+                        
+                        <div class="content">
+                            <div class="row">
+
+                                <form class="form-vertical login-form" role="form" ng-controller="loginController">
+                                        <h3 >LOGIN</h3>
+                                        <div class="form-group form-level">
+                                           
+                                            <div class="col-md-offset-1 col-md-10">
+                                                <input type="text" class="form-control" name="username" ng-model="formData.username" placeholder="用户名">
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-level">
+                                          
+                                            <div class="col-md-offset-1 col-md-10">
+                                                <input type="password" class="form-control" name="password" ng-model="formData.password" placeholder="密码">
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-level">
+                                             <div class="col-md-offset-1 col-md-10">
+                                                <button class="btn btn-default btn-block" ng-click="login()">登录</button>
+                                            </div>
+                                          
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+
+        </div>
+</body>
+</html>
